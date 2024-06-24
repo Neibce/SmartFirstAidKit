@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btn_tag_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:gravity="bottom|center"
+            android:text="구급상자 의약품 현황"
+            android:textSize="18.0sp"
+            app:autoSizeTextType="uniform" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="4.0dip"
+            android:layout_marginRight="8.0dip"
+            android:measureWithLargestChild="true"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:weightSum="4.0">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="#ffede7f6"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10.0dip"
+                    android:paddingBottom="10.0dip">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableText2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-"
+                        android:textSize="24.0sp" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableTextDate2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10.0dip"
+                    android:paddingBottom="10.0dip">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableText5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-"
+                        android:textSize="24.0sp" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableTextDate5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="#ffede7f6"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10.0dip"
+                    android:paddingBottom="10.0dip">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableText8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-"
+                        android:textSize="24.0sp" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableTextDate8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10.0dip"
+                    android:paddingBottom="10.0dip">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableText11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-"
+                        android:textSize="24.0sp" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableTextDate11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:weightSum="4.0">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10.0dip"
+                    android:paddingBottom="10.0dip">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableText1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-"
+                        android:textSize="24.0sp" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableTextDate1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="#ffede7f6"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10.0dip"
+                    android:paddingBottom="10.0dip"
+                    android:singleLine="true">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableText4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-"
+                        android:textSize="24.0sp" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableTextDate4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10.0dip"
+                    android:paddingBottom="10.0dip">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableText7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-"
+                        android:textSize="24.0sp" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableTextDate7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="#ffede7f6"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10.0dip"
+                    android:paddingBottom="10.0dip">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableText10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-"
+                        android:textSize="24.0sp" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableTextDate10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:weightSum="4.0">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="#ffede7f6"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10.0dip"
+                    android:paddingBottom="10.0dip"
+                    android:singleLine="true">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableText0"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-"
+                        android:textSize="24.0sp" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableTextDate0"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10.0dip"
+                    android:paddingBottom="10.0dip">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableText3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-"
+                        android:textSize="24.0sp" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableTextDate3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="#ffede7f6"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10.0dip"
+                    android:paddingBottom="10.0dip">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableText6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-"
+                        android:textSize="24.0sp" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableTextDate6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10.0dip"
+                    android:paddingBottom="10.0dip">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableText9"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-"
+                        android:textSize="24.0sp" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tableTextDate9"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:layout_marginBottom="4.0dip"
+            android:gravity="bottom|center"
+            android:text="상황별 태그 목록"
+            android:textSize="18.0sp"
+            app:autoSizeTextType="uniform" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <me.gujun.android.taggroup.TagGroup
+                    android:id="@+id/tag_group"
+                    style="@style/TagGroup.Large"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_tag_add"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_weight="1.0"
+        android:text="+ 태그 추가"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_edit_aidkit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="구급상자 편집" />
+
+        <Button
+            android:id="@+id/btn_search_medi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="의약품 검색" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
