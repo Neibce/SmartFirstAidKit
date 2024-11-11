@@ -18,5 +18,7 @@
 
 # 제작 결과
 ![image](https://github.com/user-attachments/assets/a65db9ea-a510-42ea-8830-7a8074e75933)|![image](https://github.com/user-attachments/assets/6d910327-4426-4e03-bc28-d8f4d0a5c667)
+--|--
+
 ![image](https://github.com/Neibce/SmartFirstAidKit/assets/18096595/31d52170-2846-42d5-9ee8-c0c370f0641d)
 
